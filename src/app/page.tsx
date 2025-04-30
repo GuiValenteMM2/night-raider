@@ -7,7 +7,7 @@ export default function Home() {
       <Image src="/images/night-raider-logo.png" alt="logo" width={600} height={180}/>
       <div className="w-20 h-1 bg-amber-500/60 mx-auto mt-1 rounded-t-full"></div>
     </div> 
-    <div className=" flex text-center flex flex-col mt-[-4vh] h-screen justify-evenly">
+    <div id="about-us" className=" flex text-center flex flex-col mt-[-4vh] h-screen justify-evenly">
       <div className="flex flex-col">
       <h1 className="text-4xl text-amber-500/70 font-bold p-4">About Us</h1>
       <div className="w-12 h-1 bg-amber-500/70 mx-auto mt-1"></div>
@@ -24,6 +24,17 @@ export default function Home() {
       </div>
       <div className="w-20 h-1 bg-amber-500/60 mx-auto mt-1 rounded-t-full"></div>
     </div>    
+    <div id="news-form" className=" flex text-center flex flex-col">
+      <div className="flex flex-col">
+        <h1 className="text-4xl text-amber-500/70 font-bold p-4">Receive our news</h1>
+        <div className="w-12 h-1 bg-amber-500/70 mx-auto mt-1"></div>
+      </div>
+      <form action="#" className="flex flex-col p-16 w-[20vw] self-center">
+        <input type="email" name="email-box" id="email-box" placeholder="Your Email here..." className="text-amber-500/60 p-1 border-amber-500/70 border-solid border-2 placeholder-amber-500/70" />
+        <button type="submit" className="text-amber-500/70 border-amber-500/60 border-2 m-2">Submit</button>
+      </form>
+    </div>
+    
    </>
   );
 }
